@@ -5,11 +5,7 @@ menuLink.forEach((link) => {
         const menu = link.parentElement.querySelector(".menu_sub");
 
         if (menu !== null) {
-            if (menu.classList.contains('menu_active')) {
-                menu.classList.remove('menu_active');
-            } else {
-                menu.classList.add('menu_active');
-            }
+            menu.classList.toggle('menu_active');
             return false;
         }
     }
