@@ -23,8 +23,7 @@ const controlBackground = document.querySelector('.book__control_background');
             }
             book.classList.add('book_fs-big');
         } else {
-            book.classList.remove('book_fs-big');
-            book.classList.remove('book_fs-small');
+            book.classList.remove('book_fs-big', 'book_fs-small');
         }
     })
 });
