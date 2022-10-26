@@ -1,13 +1,4 @@
-/*const tooltips = document.querySelectorAll('.has-tooltip');
-const tooltip = document.createElement('div');
 
-[...tooltips].forEach((element) => {
-    element.addEventListener('click', (event) => {
-        event.preventDefault();
-        
-
-    })
-})*/
 const linkElements = document.querySelectorAll('.has-tooltip');
 const tooltip = document.createElement('div');
 
@@ -27,7 +18,6 @@ Array.from(linkElements).forEach((element) => {
 
     const left = element.getBoundingClientRect().left;
     const top = element.getBoundingClientRect().top + 20;
-
     tooltip.textContent = element.title;
     tooltip.classList.add('tooltip_active', 'tooltip');
     tooltip.style.left = `${left}px`;
