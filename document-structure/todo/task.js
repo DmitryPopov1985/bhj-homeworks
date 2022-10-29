@@ -5,7 +5,7 @@ const list = document.getElementById('tasks__list');
 
 btn.addEventListener('click', (e) => {
     e.preventDefault();
-    if (input.value) {
+    if (input.value.trim()) {
         let text = input.value;
         list.insertAdjacentHTML('beforeEnd', `<div class="task">
         <div class="task__title">

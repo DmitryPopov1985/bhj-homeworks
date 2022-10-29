@@ -35,7 +35,7 @@ const productAdd = document.querySelectorAll(".product__add");
     ].find((item) => item.dataset.id === productItem.dataset.id);
 
     if (productCart) {
-      const productCartCount = productsCart.querySelector(
+      const productCartCount = productCart.querySelector(
         ".cart__product-count"
       );
       productCartCount.textContent =
